@@ -1,6 +1,6 @@
-name: jaffle_shop
+name: exemplo_dbt
 
-profile: jaffle_shop
+profile: exemplo_dbt
 
 seed-paths: ["seeds"]
 model-paths: ["models"]
@@ -10,16 +10,16 @@ clean-targets:
   - "dbt_packages"
 
 seeds:
-  jaffle_shop:
+  exemplo_dbt:
     # Configurações globais para todos os seeds
     +schema: dw_seeds
-    
+
     # Seeds com delimitador ponto e vírgula
     customers:
       +delimiter: ";"
 
 models:
-  jaffle_shop:
+  exemplo_dbt:
     staging:
       +schema: staging
       +materialized: table
@@ -33,6 +33,4 @@ models:
       +materialized: table
       +tags: ['marts']
 
-    # Materialize staging models as views, and marts as tables
-
-
+    # Materialize staging models as views e marts como tabelas
