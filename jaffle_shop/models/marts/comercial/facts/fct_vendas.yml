@@ -1,0 +1,16 @@
+version: 2
+
+models:
+  - name: fct_vendas
+    description: "Tabela fato de vendas, contendo métricas de vendas realizadas."
+    columns:
+      - name: mes
+        description: "Mês da venda."
+      - name: ano
+        description: "Ano da venda."
+      - name: total_frete
+        description: "Total de Frete"
+        tests:
+          - not_null
+
+    

@@ -1,0 +1,21 @@
+version: 2
+
+sources:
+  - name: northwind
+    description: "Dados brutos do northwind."
+    database: mapper-demo-338613
+    schema: erp_northwind
+    loader: bigquery
+    tables:
+      - name: categories
+        description: "Tabela com as categorias de bebidas e alimentos"
+        columns:
+          - name: category_id
+            description: "Nome do cliente ou fornecedor associado à transação financeira."
+          - name: category_name
+            description: "Data em que a transação financeira foi realizada."
+          - name: description
+            description: "Valor monetário da transação financeira."
+          - name: picture
+            description: "Status atual da transação financeira (e.g., pendente, concluída)."
+
