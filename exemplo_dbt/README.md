@@ -1,6 +1,6 @@
 # 📦 Projeto de exemplo dbt
 
-_Este projeto foi adaptado para servir como referência em português._
+_Este projeto foi adaptado para servir como referência 
 
 Bem-vindo! Aqui você encontra um projeto demonstrativo do dbt que pode ser utilizado para estudar e experimentar a ferramenta.
 
